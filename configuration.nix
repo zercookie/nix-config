@@ -29,11 +29,11 @@
 
   # Select internationalisation properties.
   # i18n.defaultLocale = "en_US.UTF-8";
- # console = {
-    #font = "Lat2-Terminus16";
-   # keyMap = "gb";
-    #useXkbConfig = true; # use xkb.options in tty.
-  #};
+  console = {
+  # font = "Lat2-Terminus16";
+    keyMap = "uk";
+  # useXkbConfig = true; # use xkb.options in tty.
+  };
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
@@ -73,13 +73,12 @@
   # $ nix search wget
   system.copySystemConfiguration = true;
   programs.hyprland.enable = true;
-  #experimental-features = nix-command flakes
   environment.systemPackages = with pkgs; [
     git
     gh
     kitty
     firefox
-    # cowsay
+    fastfetch
     # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     # wget
   ];
