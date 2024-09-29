@@ -1,2 +1,2 @@
 # nix-config
-my nix configs
+my nix configs  init
